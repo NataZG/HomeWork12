@@ -26,7 +26,7 @@ class IndigoVC: UIViewController {
     }
     
     private func setupNextIndigoButton() {
-        nextIndigoButton.setTitle("Next", for: .normal)
+        nextIndigoButton.setTitle("NEXT", for: .normal)
         nextIndigoButton.backgroundColor = .black
         nextIndigoButton.tintColor = .white
     }
