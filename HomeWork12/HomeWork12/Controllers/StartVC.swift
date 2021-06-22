@@ -19,7 +19,7 @@ class StartVC: UIViewController {
     @IBOutlet weak var violetButton: UIButton!
 
     @IBOutlet weak var skipAllButton: UIButton!
-    
+
     var name = ""
 
     override func viewDidLoad() {
@@ -50,23 +50,23 @@ class StartVC: UIViewController {
         case "fromStartToYellow":
             let destination = segue.destination as! YellowVC
             destination.name4 = "YELLOW"
-            
+
         case "fromStartToGreen":
             let destination = segue.destination as! GreenVC
             destination.name5 = "GREEN"
-            
+
         case "fromStartToBlue":
             let destination = segue.destination as! BlueVC
             destination.name6 = "BLUE"
-            
+
         case "fromStartToIndigo":
             let destination = segue.destination as! IndigoVC
             destination.name7 = "INDIGO"
-            
+
         case "fromStartToViolet":
             let destination = segue.destination as! VioletVC
             destination.name8 = "VIOLET"
-            
+
         case "fromStartToSkip":
             let destination = segue.destination as! RainbowVC
             destination.name9 = "This is Rainbow!"

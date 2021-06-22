@@ -11,25 +11,24 @@ class VioletVC: UIViewController {
 
     @IBOutlet weak var violetText: UILabel!
     @IBOutlet weak var nextVioletButton: UIButton!
-    
+
     var name8 = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         violetText.text = name8
         setupNextVioletButton()
-        
+
     }
     @IBAction func violetBackToStart() {
         performSegue(withIdentifier: "fromVioletToStart", sender: nil)
     }
-    
+
     private func setupNextVioletButton() {
         nextVioletButton.setTitle("NEXT", for: .normal)
         nextVioletButton.backgroundColor = .black
         nextVioletButton.tintColor = .white
     }
-
     deinit {
         print("VioletVC deinited")
     }

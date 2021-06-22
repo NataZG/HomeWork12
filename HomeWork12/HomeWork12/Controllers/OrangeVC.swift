@@ -8,19 +8,17 @@
 import UIKit
 
 class OrangeVC: UIViewController {
-    
+
     @IBOutlet weak var orangeText: UILabel!
     @IBOutlet weak var nextOrangeButton: UIButton!
     var name3 = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         orangeText.text = name3
         setupNextOrangeButton()
     }
-    
-    
-   
+
     @IBAction func orangeBackToStart() {
         performSegue(withIdentifier: "fromOrangeToStart", sender: nil)
     }
@@ -29,7 +27,6 @@ class OrangeVC: UIViewController {
         nextOrangeButton.backgroundColor = .black
         nextOrangeButton.tintColor = .white
     }
-    
     deinit {
         print("OrangeVC deinited")
     }

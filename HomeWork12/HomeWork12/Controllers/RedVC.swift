@@ -11,16 +11,16 @@ class RedVC: UIViewController {
 
     @IBOutlet weak var redText: UILabel!
     @IBOutlet weak var nextButton: UIButton!
-    
+
     var name2 = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         redText.text = name2
         setupNextButton()
 
     }
-    
+
     @IBAction func button() {
         performSegue(withIdentifier: "fromRedToStart", sender: nil)
     }

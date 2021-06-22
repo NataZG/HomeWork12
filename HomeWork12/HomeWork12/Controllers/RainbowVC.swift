@@ -10,28 +10,30 @@ import UIKit
 class RainbowVC: UIViewController {
 
     @IBOutlet weak var rainbowText: UILabel!
-    
+
     @IBOutlet weak var finishButton: UIButton!
     var name9 = ""
     var textfromRainbow = "This is Rainbow!"
-    
+
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
         rainbowText.text = name9
         setupFinishButton()
     }
-    
+
     @IBAction func backToWelcome() {
         performSegue(withIdentifier: "fromSkipToWelcome", sender: textfromRainbow)
     }
-    
+
     private func setupFinishButton() {
         finishButton.setTitle("FINISH", for: .normal)
         finishButton.backgroundColor = .purple
         finishButton.tintColor = .white
     }
-    
-   
+    deinit {
+        print("RainbowVC deinited")
+    }
+
     /*: private var firstWord = "This is"
      private var secondWord = "Rainbow"
 

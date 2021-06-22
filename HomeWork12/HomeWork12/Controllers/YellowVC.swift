@@ -12,9 +12,9 @@ class YellowVC: UIViewController {
     @IBOutlet weak var yellowText: UILabel!
 
     @IBOutlet weak var nextYellowButton: UIButton!
-    
+
     var name4 = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNextYellowButton()

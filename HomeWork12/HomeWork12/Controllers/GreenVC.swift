@@ -11,19 +11,19 @@ class GreenVC: UIViewController {
 
     @IBOutlet weak var greenText: UILabel!
     @IBOutlet weak var nextGreenButton: UIButton!
-    
+
     var name5 = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         greenText.text = name5
         setupNextGreenButton()
     }
-    
+
     @IBAction func greenBacktToStart() {
         performSegue(withIdentifier: "fromGreenToStart", sender: nil)
     }
-    
+
     private func setupNextGreenButton() {
         nextGreenButton.setTitle("NEXT", for: .normal)
         nextGreenButton.backgroundColor = .black
@@ -32,5 +32,5 @@ class GreenVC: UIViewController {
     deinit {
         print("GreenVC deinited")
     }
-    
+
 }
