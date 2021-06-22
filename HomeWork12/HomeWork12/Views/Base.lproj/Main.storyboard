@@ -117,6 +117,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
+                                            <action selector="bButton" destination="2N3-kC-M6o" eventType="touchUpInside" id="mrj-Ti-hgJ"/>
                                             <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="etP-hp-1Qy"/>
                                         </connections>
                                     </button>
@@ -175,6 +176,7 @@
                         <segue destination="rm4-WS-bnA" kind="show" identifier="fromStartToOrange" id="joc-qN-jdV"/>
                         <segue destination="7wC-ir-Ipd" kind="show" identifier="fromStartToYellow" id="gqa-pR-PGD"/>
                         <segue destination="MeZ-tk-bvw" kind="show" identifier="fromStartToGreen" id="sCi-6j-Wnp"/>
+                        <segue destination="uuE-eN-5gi" kind="show" identifier="fromStartToBlue" id="vLn-xb-Hwe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeD-d5-HPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -407,16 +409,50 @@
             </objects>
             <point key="canvasLocation" x="1387" y="784"/>
         </scene>
-        <!--View Controller-->
+        <!--BlueVC-->
         <scene sceneID="zlx-Yt-2Ul">
             <objects>
-                <viewController id="uuE-eN-5gi" sceneMemberID="viewController">
+                <viewController id="uuE-eN-5gi" customClass="BlueVC" customModule="HomeWork12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vYE-Xz-QAH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-B4-XdQ">
+                                <rect key="frame" x="148.5" y="335.5" width="117.5" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-uf-xnR">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8GR-uf-xnR" secondAttribute="height" multiplier="47:24" id="qbD-Bv-4jd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKU-Kv-tf9">
+                                        <rect key="frame" x="0.0" y="77" width="117.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="blueBackToStart" destination="uuE-eN-5gi" eventType="touchUpInside" id="Dc5-E9-VaL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0Mu-XF-abe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="8xD-B4-XdQ" firstAttribute="centerX" secondItem="0Mu-XF-abe" secondAttribute="centerX" id="Qxg-KN-xG5"/>
+                            <constraint firstItem="8xD-B4-XdQ" firstAttribute="centerY" secondItem="0Mu-XF-abe" secondAttribute="centerY" id="wSL-5b-OSE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jXd-ed-tkX"/>
+                    <connections>
+                        <outlet property="blueText" destination="8GR-uf-xnR" id="FHu-mU-hfY"/>
+                        <outlet property="nextBlueButton" destination="yKU-Kv-tf9" id="ybt-WK-3cs"/>
+                        <segue destination="2N3-kC-M6o" kind="show" identifier="fromBlueToStart" id="kjo-gI-3TV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oey-cU-jwB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -445,6 +481,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
