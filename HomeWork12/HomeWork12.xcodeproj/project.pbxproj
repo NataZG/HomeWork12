@@ -16,6 +16,7 @@
 		41633211268167ED0054943E /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41633210268167ED0054943E /* StartVC.swift */; };
 		41633215268171EB0054943E /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41633214268171EB0054943E /* RedVC.swift */; };
 		4163321B268186430054943E /* OrangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163321A268186430054943E /* OrangeVC.swift */; };
+		4163321F2681C61A0054943E /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163321E2681C61A0054943E /* YellowVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		41633210268167ED0054943E /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		41633214268171EB0054943E /* RedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
 		4163321A268186430054943E /* OrangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeVC.swift; sourceTree = "<group>"; };
+		4163321E2681C61A0054943E /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				41633210268167ED0054943E /* StartVC.swift */,
 				41633214268171EB0054943E /* RedVC.swift */,
 				4163321A268186430054943E /* OrangeVC.swift */,
+				4163321E2681C61A0054943E /* YellowVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				4163321B268186430054943E /* OrangeVC.swift in Sources */,
 				4163320F268167D80054943E /* welcomeVC.swift in Sources */,
 				416331F9268163C70054943E /* AppDelegate.swift in Sources */,
+				4163321F2681C61A0054943E /* YellowVC.swift in Sources */,
 				416331FB268163C70054943E /* SceneDelegate.swift in Sources */,
 				41633211268167ED0054943E /* StartVC.swift in Sources */,
 				41633215268171EB0054943E /* RedVC.swift in Sources */,

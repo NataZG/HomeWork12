@@ -18,6 +18,8 @@ class StartVC: UIViewController {
     @IBOutlet weak var indigoButton: UIButton!
     @IBOutlet weak var violetButton: UIButton!
 
+    @IBOutlet weak var skipAllButton: UIButton!
+    
     var name = ""
 
     override func viewDidLoad() {
@@ -29,6 +31,7 @@ class StartVC: UIViewController {
         setupBlueButton()
         setupIndigoButton()
         setupVioletButton()
+        setupSkipAllButton()
 
         startText.text = name
         startText.textColor = .white
@@ -36,25 +39,21 @@ class StartVC: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-              case "fromStartToRed":
-                let destination = segue.destination as! RedVC
-                destination.name2 = "RED"
+        case "fromStartToRed":
+            let destination = segue.destination as! RedVC
+            destination.name2 = "RED"
 
-              case "fromStartToOrange":
-                let destination = segue.destination as! OrangeVC
-                destination.name3 = "ORANGE"
+        case "fromStartToOrange":
+            let destination = segue.destination as! OrangeVC
+            destination.name3 = "ORANGE"
 
-              default: break
-            }
+        case "fromStartToYellow":
+            let destination = segue.destination as! YellowVC
+            destination.name4 = "YELLOW"
+
+        default: break
         }
-    
-    // @IBAction func oButton() {
-       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //guard let OrangeVC = storyboard.instantiateViewController(identifier: "OrangeVC") as? OrangeVC else { return }
-       // OrangeVC.name3 = "Ivan"
-
-        //show(OrangeVC, sender: nil)
-    // }
+    }
 
     private func setupRedButton() {
         redButton.setTitle("R", for: .normal)
@@ -77,6 +76,9 @@ class StartVC: UIViewController {
     private func setupVioletButton() {
         violetButton.setTitle("V", for: .normal)
     }
+    private func setupSkipAllButton() {
+        skipAllButton.setTitle("SKIP", for: .normal)
+    }
 
     @IBAction func rButton() {
         performSegue(withIdentifier: "fromStartToRed", sender: nil)
@@ -84,6 +86,9 @@ class StartVC: UIViewController {
 
     @IBAction func oButton() {
         performSegue(withIdentifier: "fromStartToOrange", sender: nil)
+    }
+    @IBAction func yButton() {
+        performSegue(withIdentifier: "fromStartToYellow", sender: nil)
     }
     deinit {
         print("StartVC deinited")
