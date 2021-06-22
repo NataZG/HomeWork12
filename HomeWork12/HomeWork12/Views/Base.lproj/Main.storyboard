@@ -136,6 +136,7 @@
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Yk-42-EE7"/>
+                                            <action selector="vButton" destination="2N3-kC-M6o" eventType="touchUpInside" id="Pgz-dg-WOd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -179,6 +180,7 @@
                         <segue destination="MeZ-tk-bvw" kind="show" identifier="fromStartToGreen" id="sCi-6j-Wnp"/>
                         <segue destination="uuE-eN-5gi" kind="show" identifier="fromStartToBlue" id="vLn-xb-Hwe"/>
                         <segue destination="SdS-wB-EgK" kind="show" identifier="fromStartToIndigo" id="EAO-E5-QGx"/>
+                        <segue destination="dDh-2T-VGu" kind="show" identifier="fromStartToViolet" id="yer-vL-20O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeD-d5-HPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -509,10 +511,59 @@
             </objects>
             <point key="canvasLocation" x="2748" y="784"/>
         </scene>
+        <!--VioletVC-->
+        <scene sceneID="17z-W7-jiA">
+            <objects>
+                <viewController id="dDh-2T-VGu" customClass="VioletVC" customModule="HomeWork12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1az-46-F0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="u35-5I-q1f">
+                                <rect key="frame" x="148.5" y="335.5" width="117.5" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayo-3o-Mgh">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ayo-3o-Mgh" secondAttribute="height" multiplier="47:24" id="118-GD-qO1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12g-tZ-v8j">
+                                        <rect key="frame" x="0.0" y="77" width="117.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="violetBackToStart" destination="dDh-2T-VGu" eventType="touchUpInside" id="8Tj-XJ-RUU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aYz-LH-JDU"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="u35-5I-q1f" firstAttribute="centerX" secondItem="aYz-LH-JDU" secondAttribute="centerX" id="A1z-Jr-4IQ"/>
+                            <constraint firstItem="u35-5I-q1f" firstAttribute="centerY" secondItem="aYz-LH-JDU" secondAttribute="centerY" id="hCZ-wZ-a07"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6M3-pQ-lBb"/>
+                    <connections>
+                        <outlet property="nextVioletButton" destination="12g-tZ-v8j" id="rLE-pB-RYh"/>
+                        <outlet property="violetText" destination="Ayo-3o-Mgh" id="dzI-Zs-e0z"/>
+                        <segue destination="2N3-kC-M6o" kind="show" identifier="fromVioletToStart" id="090-2k-MOh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYj-hb-v7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3457" y="783"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="EAO-E5-QGx"/>
-        <segue reference="Jnp-Kt-3nX"/>
+        <segue reference="yer-vL-20O"/>
+        <segue reference="090-2k-MOh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBlueColor">
@@ -526,6 +577,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
