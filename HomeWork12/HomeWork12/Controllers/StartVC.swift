@@ -50,6 +50,10 @@ class StartVC: UIViewController {
         case "fromStartToYellow":
             let destination = segue.destination as! YellowVC
             destination.name4 = "YELLOW"
+            
+        case "fromStartToGreen":
+            let destination = segue.destination as! GreenVC
+            destination.name5 = "GREEN"
 
         default: break
         }
@@ -89,6 +93,9 @@ class StartVC: UIViewController {
     }
     @IBAction func yButton() {
         performSegue(withIdentifier: "fromStartToYellow", sender: nil)
+    }
+    @IBAction func gButton() {
+        performSegue(withIdentifier: "fromStartToGreen", sender: nil)
     }
     deinit {
         print("StartVC deinited")
