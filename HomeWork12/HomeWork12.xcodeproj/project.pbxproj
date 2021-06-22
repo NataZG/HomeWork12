@@ -14,6 +14,8 @@
 		41633205268163CC0054943E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41633203268163CC0054943E /* LaunchScreen.storyboard */; };
 		4163320F268167D80054943E /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163320E268167D80054943E /* welcomeVC.swift */; };
 		41633211268167ED0054943E /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41633210268167ED0054943E /* StartVC.swift */; };
+		41633215268171EB0054943E /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41633214268171EB0054943E /* RedVC.swift */; };
+		4163321B268186430054943E /* OrangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163321A268186430054943E /* OrangeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		41633206268163CC0054943E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4163320E268167D80054943E /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		41633210268167ED0054943E /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		41633214268171EB0054943E /* RedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
+		4163321A268186430054943E /* OrangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				4163320E268167D80054943E /* welcomeVC.swift */,
 				41633210268167ED0054943E /* StartVC.swift */,
+				41633214268171EB0054943E /* RedVC.swift */,
+				4163321A268186430054943E /* OrangeVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,10 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4163321B268186430054943E /* OrangeVC.swift in Sources */,
 				4163320F268167D80054943E /* welcomeVC.swift in Sources */,
 				416331F9268163C70054943E /* AppDelegate.swift in Sources */,
 				416331FB268163C70054943E /* SceneDelegate.swift in Sources */,
 				41633211268167ED0054943E /* StartVC.swift in Sources */,
+				41633215268171EB0054943E /* RedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

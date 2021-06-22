@@ -30,6 +30,7 @@ class welcomeVC: UIViewController {
     }
     private func setupWelcomeText() {
         welcomeText.text = "MEET ROY G. BIV!"
+        welcomeText.textColor = .white
     }
     private func setupWelcomeButton() {
         welcomeButton.setTitle("WHO?", for: .normal)
