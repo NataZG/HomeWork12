@@ -25,6 +25,13 @@ class welcomeVC: UIViewController {
             guard let destination = segue.destination as? StartVC else { return }
             destination.name = "Follow One by One!"
         }
+    
+    @IBAction func unwindToWelcomeVC(_ unwindSegue: UIStoryboardSegue) {
+        guard unwindSegue.identifier == "fromSkipToWelcome" else { return }
+        guard let source = unwindSegue.source as? RainbowVC else { return }
+        welcomeText.text = source.textfromRainbow
+    }
+    
     @IBAction func buttonTapped() {
         performSegue(withIdentifier: "goToStart", sender: nil)
     }

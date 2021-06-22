@@ -21,6 +21,7 @@
 		4163322B2681CEDC0054943E /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163322A2681CEDC0054943E /* BlueVC.swift */; };
 		4163322F2681D1510054943E /* IndigoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163322E2681D1510054943E /* IndigoVC.swift */; };
 		416332332681D3B90054943E /* VioletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416332322681D3B90054943E /* VioletVC.swift */; };
+		416332372681DD2D0054943E /* RainbowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416332362681DD2D0054943E /* RainbowVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		4163322A2681CEDC0054943E /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
 		4163322E2681D1510054943E /* IndigoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoVC.swift; sourceTree = "<group>"; };
 		416332322681D3B90054943E /* VioletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VioletVC.swift; sourceTree = "<group>"; };
+		416332362681DD2D0054943E /* RainbowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4163322A2681CEDC0054943E /* BlueVC.swift */,
 				4163322E2681D1510054943E /* IndigoVC.swift */,
 				416332322681D3B90054943E /* VioletVC.swift */,
+				416332362681DD2D0054943E /* RainbowVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4163321B268186430054943E /* OrangeVC.swift in Sources */,
+				416332372681DD2D0054943E /* RainbowVC.swift in Sources */,
 				4163320F268167D80054943E /* welcomeVC.swift in Sources */,
 				416332232681CA9D0054943E /* GreenVC.swift in Sources */,
 				416331F9268163C70054943E /* AppDelegate.swift in Sources */,
