@@ -12,11 +12,11 @@ class GreenVC: UIViewController {
     @IBOutlet weak var greenText: UILabel!
     @IBOutlet weak var nextGreenButton: UIButton!
 
-    var name5 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        greenText.text = name5
+        greenText.text = name
         setupNextGreenButton()
     }
 

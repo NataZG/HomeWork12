@@ -41,35 +41,35 @@ class StartVC: UIViewController {
         switch segue.identifier {
         case "fromStartToRed":
             let destination = segue.destination as! RedVC
-            destination.name2 = "RED"
+            destination.name = "RED"
 
         case "fromStartToOrange":
             let destination = segue.destination as! OrangeVC
-            destination.name3 = "ORANGE"
+            destination.name = "ORANGE"
 
         case "fromStartToYellow":
             let destination = segue.destination as! YellowVC
-            destination.name4 = "YELLOW"
+            destination.name = "YELLOW"
 
         case "fromStartToGreen":
             let destination = segue.destination as! GreenVC
-            destination.name5 = "GREEN"
+            destination.name = "GREEN"
 
         case "fromStartToBlue":
             let destination = segue.destination as! BlueVC
-            destination.name6 = "BLUE"
+            destination.name = "BLUE"
 
         case "fromStartToIndigo":
             let destination = segue.destination as! IndigoVC
-            destination.name7 = "INDIGO"
+            destination.name = "INDIGO"
 
         case "fromStartToViolet":
             let destination = segue.destination as! VioletVC
-            destination.name8 = "VIOLET"
+            destination.name = "VIOLET"
 
         case "fromStartToSkip":
             let destination = segue.destination as! RainbowVC
-            destination.name9 = "This is Rainbow!"
+            destination.name = "This is Rainbow!"
 
         default: break
         }

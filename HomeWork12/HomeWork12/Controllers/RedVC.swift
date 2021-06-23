@@ -12,11 +12,11 @@ class RedVC: UIViewController {
     @IBOutlet weak var redText: UILabel!
     @IBOutlet weak var nextButton: UIButton!
 
-    var name2 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        redText.text = name2
+        redText.text = name
         setupNextButton()
 
     }

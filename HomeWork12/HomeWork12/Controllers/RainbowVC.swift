@@ -12,12 +12,12 @@ class RainbowVC: UIViewController {
     @IBOutlet weak var rainbowText: UILabel!
 
     @IBOutlet weak var finishButton: UIButton!
-    var name9 = ""
+    var name = ""
     var textfromRainbow = "This is Rainbow!"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        rainbowText.text = name9
+        rainbowText.text = name
         setupFinishButton()
     }
 
@@ -33,6 +33,7 @@ class RainbowVC: UIViewController {
     deinit {
         print("RainbowVC deinited")
     }
+// как реализовать этот код :/
 
     /*: private var firstWord = "This is"
      private var secondWord = "Rainbow"

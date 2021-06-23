@@ -12,11 +12,11 @@ class BlueVC: UIViewController {
     @IBOutlet weak var blueText: UILabel!
     @IBOutlet weak var nextBlueButton: UIButton!
 
-    var name6 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        blueText.text = name6
+        blueText.text = name
         setupNextBlueButton()
     }
 

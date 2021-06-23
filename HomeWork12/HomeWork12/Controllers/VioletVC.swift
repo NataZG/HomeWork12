@@ -12,11 +12,11 @@ class VioletVC: UIViewController {
     @IBOutlet weak var violetText: UILabel!
     @IBOutlet weak var nextVioletButton: UIButton!
 
-    var name8 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        violetText.text = name8
+        violetText.text = name
         setupNextVioletButton()
 
     }

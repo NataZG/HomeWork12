@@ -11,11 +11,11 @@ class OrangeVC: UIViewController {
 
     @IBOutlet weak var orangeText: UILabel!
     @IBOutlet weak var nextOrangeButton: UIButton!
-    var name3 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        orangeText.text = name3
+        orangeText.text = name
         setupNextOrangeButton()
     }
 

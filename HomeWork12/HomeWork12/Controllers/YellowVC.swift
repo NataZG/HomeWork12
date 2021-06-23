@@ -13,12 +13,12 @@ class YellowVC: UIViewController {
 
     @IBOutlet weak var nextYellowButton: UIButton!
 
-    var name4 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNextYellowButton()
-        yellowText.text = name4
+        yellowText.text = name
     }
     @IBAction func yellowBackToStart() {
         performSegue(withIdentifier: "fromYellowToStart", sender: nil)

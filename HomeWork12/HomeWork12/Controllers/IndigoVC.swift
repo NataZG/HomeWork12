@@ -12,11 +12,11 @@ class IndigoVC: UIViewController {
     @IBOutlet weak var indigoText: UILabel!
     @IBOutlet weak var nextIndigoButton: UIButton!
 
-    var name7 = ""
+    var name = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        indigoText.text = name7
+        indigoText.text = name
         setupNextIndigoButton()
 
     }
