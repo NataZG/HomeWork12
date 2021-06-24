@@ -51,9 +51,11 @@
                         <outlet property="welcomeButton" destination="Jql-kX-cjx" id="qLd-Dn-47c"/>
                         <outlet property="welcomeText" destination="kdZ-2j-teO" id="QE8-ba-9bo"/>
                         <segue destination="2N3-kC-M6o" kind="show" identifier="goToStart" id="oOG-X0-T6w"/>
+                        <segue destination="fWf-Az-yRY" kind="unwind" unwindAction="unwindToWelcomeVC:" id="9ev-dV-S8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="fWf-Az-yRY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="723" y="94"/>
         </scene>
@@ -633,7 +635,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kjo-gI-3TV"/>
+        <segue reference="oOG-X0-T6w"/>
         <segue reference="CDt-No-rxt"/>
     </inferredMetricsTieBreakers>
     <resources>
